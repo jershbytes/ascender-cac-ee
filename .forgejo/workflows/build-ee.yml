@@ -46,7 +46,8 @@ jobs:
           uv run --no-sync ansible-builder build \
             --tag "$image:$image_tag" \
             --tag "$image:$GITHUB_SHA" \
-            --build-arg PYCMD=/usr/bin/python3.12
+            --build-arg PYCMD=/usr/bin/python3.12 \
+            --extra-build-cli-args "--network=host"
 
           docker push "$image:$image_tag"
           docker push "$image:$GITHUB_SHA"
