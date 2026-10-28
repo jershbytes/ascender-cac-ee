@@ -1,0 +1,8 @@
+---
+collections:
+  - name: git+https://github.com/jershbytes/ansible-homelab.git
+    type: git
+    version: main
+  - name: ansible.posix
+  - name: community.general
+...
