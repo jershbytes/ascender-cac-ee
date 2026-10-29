@@ -6,6 +6,6 @@ images:
     name: quay.io/ansible/awx-ee:latest
 
 dependencies:
-  galaxy: requirements.yml
-  python: requirements.txt
+  python: dependencies/requirements.txt
+  galaxy: dependencies/requirements.yml
 ...

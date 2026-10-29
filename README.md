@@ -9,6 +9,7 @@ An Ansible execution environment for Ascender CAC, built on the AWX execution-en
 - `community.general`
 - `community.proxmox`
 - Python package `proxmoxer`
+- Python package `requests`
 
 See [requirements.yml](requirements.yml) and [requirements.txt](requirements.txt) for the dependency definitions.
 
