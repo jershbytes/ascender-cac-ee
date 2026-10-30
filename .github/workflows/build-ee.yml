@@ -55,8 +55,7 @@ jobs:
             --container-runtime docker \
             --tag "$image:$image_tag" \
             --tag "$image:$GITHUB_SHA" \
-            --build-arg PYCMD=/usr/bin/python3.12 \
-            --extra-build-cli-args=--network=host
+            --build-arg PYCMD=/usr/bin/python3.12
 
           if [[ "$GITHUB_EVENT_NAME" != "pull_request" && ( "$GITHUB_REF" == refs/heads/main || "$GITHUB_REF" == refs/tags/v* ) ]]; then
             docker push "$image:$image_tag"
