@@ -28,13 +28,13 @@ The execution-environment definition is in [execution-environment.yml](execution
 
 ## Published image
 
-The Forgejo workflow builds and pushes the image to:
+The GitHub Actions workflow builds and pushes the image to GitHub Container Registry:
 
 ```text
-git.jershlabs.xyz/jershbytes/ascender-cac-ee:<tag>
+ghcr.io/jershbytes/ascender-cac-ee:<tag>
 ```
 
-Pushes to `main` publish the `latest` tag. Version tags (`v*`) publish the matching version tag. Each workflow build is also tagged with its commit SHA. The workflow requires the `REGISTRY_USER` and `REGISTRY_TOKEN` repository secrets for registry authentication.
+Pushes to `main` publish the `latest` tag. Version tags (`v*`) publish the matching version tag. Each published image is also tagged with its commit SHA. Pull requests build the image without publishing it. The workflow authenticates with `GITHUB_TOKEN`; no registry secrets are required. Set the package visibility to public in GitHub if the image should be publicly pullable.
 
 ## License
 
