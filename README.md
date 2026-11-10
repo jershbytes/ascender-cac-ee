@@ -15,7 +15,7 @@ See [requirements.yml](requirements.yml) and [requirements.txt](requirements.txt
 
 ## Build locally
 
-Requirements: Python 3.10 or later, [uv](https://docs.astral.sh/uv/), and a container engine supported by Ansible Builder.
+Requirements: Python 3.14 or later, [uv](https://docs.astral.sh/uv/), and a container engine supported by Ansible Builder.
 
 ```sh
 uv sync --locked

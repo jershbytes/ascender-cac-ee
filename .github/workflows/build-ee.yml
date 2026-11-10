@@ -24,10 +24,8 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v7
 
-      - name: Install uv
-        run: |
-          curl --fail --silent --show-error --location https://astral.sh/uv/0.12.1/install.sh | sh
-          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@latest
 
       - name: Install build dependencies
         run: uv sync --locked

@@ -1,10 +1,10 @@
 [project]
 name = "ascender-cac-ee"
-version = "0.1.0"
+version = "0.2.0"
 description = "Ansible execution environment for Ascender CAC"
-requires-python = ">=3.10"
+requires-python = ">=3.14"
 dependencies = [
-    "ansible-builder>=3.1,<4",
+    "ansible-builder==3.2.0",
 ]
 
 [tool.uv]
