@@ -1,7 +1,7 @@
 [project]
-name = "ascender-cac-ee"
-version = "0.2.0"
-description = "Ansible execution environment for Ascender CAC"
+name = "jershbytes-ee-general"
+version = "0.1.0"
+description = "Ansible execution environment for Ascender Automation."
 requires-python = ">=3.14"
 dependencies = [
     "ansible-builder==3.2.0",
